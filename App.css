@@ -1,0 +1,196 @@
+@import './font/stylesheet.css'; 
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Visby CF';
+}
+
+body{
+  font-family: 'Visby CF' !important;
+  overflow-x: hidden;
+}
+
+.bg-blue{
+  background-color: #0067F9;
+}
+
+.bg-cyan{
+  background-color: #D8E8FF;
+}
+
+.bg-mate{
+  background-color: #202020;
+}
+
+.border-b-mate{
+  border-bottom: 4px solid #202020;
+}
+
+.border-b-blue{
+  border-bottom: 4px solid #0067F9;
+}
+
+.border-t-blue{
+  border-top: 4px solid #0067F9;
+}
+
+.text-blue{
+  color: #0067F9;
+}
+
+.border-blue{
+  border: 1px solid #0067F9;
+}
+
+.border-gray{
+  border: 1px solid #E2E2E2;
+}
+
+.bg-gray{
+  background-color: #FAFAFA;
+}
+
+.text-gray{
+  color: #949494;
+}
+
+.bg-sea{
+  background-color: #D8E8FF;
+}
+
+.text-brand{
+  color: #CDCDCD;
+}
+
+.text-pink{
+  color: #DD1B60;
+}
+
+.w-brand{
+  width: 35% !important;
+}
+
+.ideas-box{
+  right: 0;
+  top: 24px;
+  z-index: -1;
+}
+
+.product-box{
+  right: 0;
+  bottom: 0;
+  width: 13rem;
+  top: 24px;
+  z-index: -1;
+}
+
+.brands-nav{
+  right: 0;
+  top: 32%;
+}
+
+@media only screen and (max-width: 900px) {
+  .brands-nav{
+    right: 5%;
+    top: 0;
+  }
+  .ideas-box{
+    right: 0;
+    top: 12px;
+    height: 1.25rem;
+    width: 5rem;
+    z-index: -1;
+  }
+  .product-box{
+    right: 0;
+    bottom: 0;
+    height: 1.35rem;
+    width: 8rem;
+    top: 13px;
+    z-index: -1;
+  }
+}
+
+.bg-pink{
+  background-color: #DD1B60;
+}
+
+.bg-pink-light{
+  background-color: #FFEFF5;
+}
+
+.border-pink{
+  border: 1px solid #DD1B60;
+}
+
+.text-black-light{
+  color: #474747;
+}
+
+.w-fit{
+  width: fit-content;
+}
+
+.z-behind{
+  z-index: -1;
+}
+
+.h-half{
+  height: 50%;
+}
+
+
+@media (max-height: 630px){
+  .product {
+    margin-top: 14rem;
+  }
+}
+@media (max-height: 530px){
+  .product {
+      margin-top: 20rem;
+    }
+  }
+@media (max-height: 450px){
+  .product {
+      margin-top: 26rem;
+  }
+}
+@media (max-height: 350px){
+  .product {
+      margin-top: 34rem;
+  }
+}
+@media (max-height: 250px){
+  .product {
+      margin-top: 42rem;
+  }
+}
+
+/* .h-mobile{
+  height: calc(100vh - 5px);
+} */
+
+.price{
+  bottom: 65px;
+}
+
+.confetti{
+  background-image: url(./images/Confetti.png);
+  background-size: auto 40%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rotate{
+  animation:spin 8s linear infinite;
+}
+
+@media (max-width: 920px){
+  .project{
+    height: 80px;
+  }
+}
+
+@-moz-keyframes spin { 50% { -moz-transform: rotate(3deg); } 100% {-moz-transform: rotate(0deg);} }
+@-webkit-keyframes spin { 50% { -webkit-transform: rotate(3deg); } 100% {-webkit-transform: rotate(0deg);} }
+@keyframes spin { 50% { transform:rotate(3deg); } 100% { transform:rotate(0deg); } }

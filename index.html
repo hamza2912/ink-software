@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ink Software</title>
+
+    <!-- Owl-Carousel css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind & Fontawesome -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Main css and scss -->
+    <link rel="stylesheet" href="./App.css">
+
+    <!-- AOS css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    
+    <div class="">
+        <div class="w-full lg:h-screen">
+        <!-- Navbar -->
+        <!-- changes -->
+        <div class="w-full flex flex-row justify-between items-center pl-5 pr-8 py-3 lg:hidden fixed top-0 z-50 bg-none mobile-header">
+            <div class='sm-logo'>
+                <img class="w-2/5 h-auto" src="./icons/updated_logo.svg" alt="Logo">
+            </div>
+            <i class="fas fa-bars text-blue cursor-pointer mobile-nav z-50"></i>
+        </div>
+        <!-- ... -->
+        <!-- changes -->
+        <div class="lg:flex-row items-center flex-col lg:px-20 lg:pb-2 lg:pt-2 pt-3 hidden lg:flex nav-body top-0 fixed w-full h-screen lg:h-auto bg-white z-50">
+        
+            <div class="lg:w-3/5 w-full flex lg:flex-row flex-col lg:justify-between items-start lg:items-center px-2 lg:px-0 py-5 lg:py-0 font-semibold z-50 bg-white lg:bg-none h-full lg:h-auto">
+                <div class='logo hidden lg:block'>
+                    <img class="w-4/6 h-auto" src="./icons/updated_logo.svg" alt="Logo">
+                </div>
+                <a class="z-10 pl-5 mt-5 lg:mt-0 lg:pl-0 links" href="">Services</a>
+                <a class="z-10 pl-5 lg:pl-0 mt-5 lg:mt-0 links" href="">Projects</a>
+                <a class="z-10 pl-5 lg:pl-0 mt-5 lg:mt-0 links" href="">Workflow</a>
+                <a class="z-10 pl-5 lg:pl-0 mt-5 lg:mt-0 links" href="">Resources</a>
+                <a class="z-10 pl-5 lg:pl-0 mt-5 lg:mt-0 links" href="">Careers</a>
+                <a class="z-10 pl-5 lg:pl-0 mt-5 lg:mt-0 lg:hidden" href="">Contact Us</a>
+                <div class="flex justify-center absolute price w-full pl-3 pr-8 lg:hidden">
+                    <button class="w-full px-3 py-1 rounded bg-blue text-white font-semibold">Price Estimate</button>
+                </div>
+            </div>
+            <div class="lg:w-2/5 w-full lg:flex lg:flex-row hidden flex-col items-center pl-5 lg:pl-0 lg:justify-end z-10 shadow-md lg:shadow-none h-half lg:h-auto z-50 bg-white lg:bg-none">
+                <button class="w-fit px-3 py-1 border-blue rounded text-blue lg:mr-4 font-semibold mt-10 lg:mt-0">Contact Us</button>
+                <button class="w-fit px-3 py-1 rounded bg-blue text-white font-semibold mt-10 mb-5 lg:mt-0 lg:mb-0">Price Estimate</button>
+            </div>
+        </div>
+        <div class="w-full flex flex-row justify-end">
+            <div class="px-20 py-5 desktop-bars fixed z-50 hidden top-0">
+                <i class="fas fa-bars text-blue cursor-pointer z-50"></i>
+            </div>
+        </div>
+        <!-- ... -->
+        <!-- section 1 -->
+        <!-- changes -->
+        <div class="w-full h-full flex lg:flex-row flex-col mt-20">
+        <!-- ... -->
+            <div data-aos='fade-right' class="lg:w-1/2 w-full confetti z-behind h-full flex flex-col justify-center lg:pl-20 pl-5 lg:-mt-10 mt-10 lg:mt-0">
+                <h2 class="lg:text-5xl text-3xl leading-none font-semibold">See how we turn <span class="text-blue relative">ideas<div class="absolute w-32 h-8
+                     bg-sea ideas-box"></div></span><br>
+                    into real life <span class="text-blue relative">products.<div class="absolute h-8 bg-sea product-box"></div></span></h2>
+                <p class="lg:text-xl text-base text-black-light lg:w-3/4 w-11/12 mt-5">We can provide you with a full custom software development starting 
+                    with a series of Design Thinking workshops. We will define with you a detailed roadmap,</p>
+                <button class="w-fit px-3 py-1 border-blue rounded text-blue mr-4 mt-5 lg:text-base text-sm">Contact Us</button>
+            </div>
+            <!-- changes -->
+            <div class="lg:w-1/2 w-full lg:h-full z-behind flex lg:items-center lg:justify-end justify-center">
+                <img class="lg:w-full w-3/4 h-auto lg:pb-16 lg:pr-16 rotate" src="./images/web_dev.svg" alt="Dragon">
+            </div>
+            <!-- ... -->
+        </div> 
+        </div>
+        <!-- section 2 -->
+        <div class="w-full lg:h-screen lg:mt-32 mt-24">
+            <p class="text-blue text-center text-xl font-semibold z-behind">Who we are?</p>
+            <h2 data-aos-delay='100' class="lg:text-5xl text-3xl text-center font-bold z-behind leading-none mt-5 px-5">We are end-to-end custom product <br class='hidden lg:block'>development company.</h2>
+            <div class="w-full flex lg:flex-row flex-col lg:px-20 px-6 lg:mt-10 mt-3">
+                <div data-aos='fade-right' data-aos-delay='100' class="lg:w-1/3 w-full flex flex-col mt-3 text-sm">
+                    <div id='product_discovery' class="flex flex-row services-tags items-center cursor-pointer p-2 border-gray lg:w-4/5 rounded mb-4">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/light.svg" alt="Light Bulb">
+                        <p>Product Discovery Process</p>
+                    </div>
+                    <div id='user_testing' class="flex flex-row services-tags items-center cursor-pointer p-2 border-gray lg:w-4/5 rounded mb-4">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/bug.svg" alt="Light Bulb">
+                        <p>User Testing</p>
+                    </div>
+                    <div id='product_design' class="flex flex-row services-tags items-center cursor-pointer p-2 border-gray lg:w-4/5 rounded mb-4">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/designservice.svg" alt="Light Bulb">
+                        <p>Product Design</p>
+                    </div>
+                    <div id='web_development' class="flex flex-row services-tags items-center cursor-pointer p-2 border-blue lg:w-4/5 rounded mb-4 shadow-md">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/code.svg" alt="Light Bulb">
+                        <p class="text-blue">Web development</p>
+                    </div>
+                    <div id='mobile_dev' class="flex flex-row services-tags items-center cursor-pointer p-2 border-gray lg:w-4/5 rounded mb-4">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/developermode.svg" alt="Light Bulb">
+                        <p>Mobile Development</p>
+                    </div>
+                    <div id='mvp_dev' class="flex flex-row services-tags items-center cursor-pointer p-2 border-gray lg:w-4/5 rounded mb-4">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/military.svg" alt="Light Bulb">
+                        <p>MVP Development</p>
+                    </div>
+                    <div id='scrum' class="flex flex-row services-tags items-center cursor-pointer p-2 border-gray lg:w-4/5 rounded">       
+                        <img class='w-10 h-auto p-2 bg-cyan rounded mr-2' src="./icons/sportsblack.svg" alt="Light Bulb">
+                        <p>Scrum Team Augmentation</p>
+                    </div>
+                </div>
+                <!-- web_development -->
+                <div id='web' class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services web_development">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold">Web Development</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">We started as a custom software development company. Our developers excel at both frontend and backend sides using the latest technologies 
+                        and best practices. Together with product managers and quality assurance specialists, they deliver the end-to-end product for you.</p>
+                    <img class="w-full h-auto mt-5" src="./images/Group1.png" alt="Group Image">
+                </div>
+                <!-- Product_discovery -->
+                <div id='pds'  class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services product_discovery hidden">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold">Product Discovery Process</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">Do you have an idea of a product or service and want to bring it to life? We can provide you with a full custom software development starting with a series of Design Thinking workshops. We will define with you a detailed roadmap, refine the value proposition delivery.</p>
+                    <img class="w-full h-auto mt-5" src="./images/product_discovery.png" alt="Product Discovery">
+                </div>
+                <!-- user testing -->
+                <div id='ut' class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services user_testing hidden">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold">User Testing</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">There’s nothing worse than building on wrong assumptions, so before product development, we will help you quickly validate your concept. By preparing user interviews to verify your personas and usability testing to improve the UX of your products our team.</p>
+                    <img class="w-full h-auto mt-5" src="./images/usertesting.png" alt="Group Image">
+                </div>
+                <!-- product design -->
+                <div id='pd' class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services product_design hidden">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold">Product Design</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">A tailor-made approach to bring visual value to your project. Our teams of strategists and UX/UI designers are always ready to create stunning interfaces and branding from scratch for new custom products or to provide UX and UI design for existing apps.</p>
+                    <img class="w-full h-auto mt-5" src="./images/product_design.png" alt="Group Image">
+                </div>
+                <!-- mobile dev -->
+                <div id='md' class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services mobile_dev hidden">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold">Mobile Development</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">We build apps for iOS and Android devices using both native languages and cross-platform alternatives. We cover the custom software development by making sure the applications work smoothly on most used devices.</p>
+                    <img class="w-full h-auto mt-5" src="./images/mobile.png" alt="Group Image">
+                </div>
+                <!-- mvp dev -->
+                <div id='mvpd' class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services mvp_dev hidden">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold">MVP Development</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">Ready to get your product up and running? We’ve got your back all the way - from choosing the adequate scope for the first release and deciding on the technology, through project management and product ownership, up to the roll-out.</p>
+                    <img class="w-full h-auto mt-5" src="./images/mvp.png" alt="Group Image">
+                </div>
+                <!-- Scrum -->
+                <div id='sc' class="lg:w-2/3 mt-5 pt-5 lg:pt-0 lg:mt-0 w-full services scrum hidden">
+                    <div class="flex lg:flex-row flex-col justify-between items-center">
+                        <h2 class="lg:text-4xl text-2xl font-bold text-center lg:text-left">Scrum Team Augmentation</h2>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white font-semibold lg:text-base text-sm mt-1 lg:mt-0">Read More</button>
+                    </div>
+                    <p class="lg:text-xl text-base text-black-light mt-5">Once your MVP has been built, it’s time for maintenance and set up of a product development roadmap to keep on growing. We’ll make sure there are no bugs and develop your custom product to its full potential. We can deploy a dedicated Scrum Team for you, on-demand!</p>
+                    <img class="w-full h-auto mt-5" src="./images/scrum.png" alt="Group Image">
+                </div>
+            </div>
+        </div>
+        <!-- section 3 -->
+        <div class="w-full lg:px-10 lg:mt-32 mt-10 product relative">
+            <div class="w-full bg-black lg:rounded py-16 lg:px-32 px-5">
+                <p data-aos='zoom-in' class="text-blue text-center lg:text-xl text-base font-semibold">More than custom software development</p>
+                <h2 data-aos='zoom-in' data-aos-delay='100' class="lg:text-5xl text-3xl text-center font-bold leading-none mt-5 text-white">How can we help your product?</h2>
+                <div class="grid grid-cols-3 mt-16">
+                    <!-- changes -->
+                    <a class="cursor-pointer">
+                        <div class='project p-3 pb-8 flex justify-center border-b-mate startup'>
+                            <p class="text-white text-xs lg:text-base">Startup MVPs</p>
+                        </div>
+                    </a>
+                    <a class="cursor-pointer">
+                        <div class='project p-3 pb-8 flex justify-center border-b-blue Agile'>
+                            <p class="text-white text-xs lg:text-base">Agile Product Scaling Team</p>
+                        </div>
+                    </a>
+                    <a class="cursor-pointer">
+                        <div class='project p-3 pb-8 flex justify-center border-b-mate Corporate'>
+                            <p class="text-white text-xs lg:text-base">Corporate Digital Transformation</p>
+                        </div>
+                    </a>
+                    <!-- ... -->
+                </div>
+                <div class="w-full flex lg:flex-row flex-col my-12">
+                    <div data-aos='fade-right' data-aos-delay='100' class="lg:w-2/6 w-full flex flex-col text-base text-white">
+                        <div class='w-fit flex flex-row items-center py-2 px-3 rounded bg-mate mb-4'>
+                            <img class='w-6 h-auto mr-2' src="./icons/designserviceblue.svg" alt="Light Bulb">
+                            <p>Product Design</p>
+                        </div>
+                        <div class='w-fit flex flex-row items-center py-2 px-3 rounded bg-mate mb-4'>
+                            <img class='w-6 h-auto mr-2' src="./icons/code.svg" alt="Light Bulb">
+                            <p>Web Development</p>
+                        </div>
+                        <div class='w-fit flex flex-row items-center py-2 px-3 rounded bg-mate mb-4'>
+                            <img class='w-6 h-auto mr-2' src="./icons/cloudblue.svg" alt="Light Bulb">
+                            <p>Cloud Application</p>
+                        </div>
+                        <div class='w-fit flex flex-row items-center py-2 px-3 rounded bg-mate mb-4'>
+                            <img class='w-6 h-auto mr-2' src="./icons/categoryblue.svg" alt="Light Bulb">
+                            <p>Product Management</p>
+                        </div>
+                        <div class='w-fit flex flex-row items-center py-2 px-3 rounded bg-mate mb-4'>
+                            <img class='w-6 h-auto mr-2' src="./icons/thumbsupblue.svg" alt="Light Bulb">
+                            <p>Quality Assurance</p>
+                        </div>
+                        <div class='w-fit flex flex-row items-center py-2 px-3 rounded bg-mate mb-4'>
+                            <img class='w-6 h-auto mr-2' src="./icons/sportsblue.svg" alt="Light Bulb">
+                            <p>Augmented Scrum Team</p>
+                        </div>
+                    </div>
+                    <div class="lg:w-4/6 w-full flex flex-col items-center lg:block">
+                        <p class="lg:text-3xl text-md text-white text-center lg:text-left mt-5 lg:mt-0 project-details">We have dedicated product teams ready to start developing new features from your backlog or 
+                            to take over your development department completely. Make your process more agile while scaling up.</p>
+                        <button class="w-fit px-3 py-2 rounded bg-blue text-white mt-4 font-semibold lg:text-base text-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- section 3 subsection -->
+            <div class="w-full lg:mt-5 mt-3 bg-black lg:rounded py-8 lg:px-32 px-5 flex lg:flex-row lg:justify-between flex-col items-center border-t-blue">
+                <p class="lg:text-2xl text-md text-white text-center lg:text-left">We will tailor our process and solution to your needs</p>
+                <button class="w-fit px-3 py-2 rounded bg-blue text-white mt-4 font-semibold lg:text-base text-sm">Get in touch</button>
+            </div> 
+        </div>
+        <!-- section 4 -->
+        <div class="w-full lg:mt-32 mt-10">
+            <p data-aos='zoom-in' class="text-blue text-center text-xl font-semibold">Featured Projects</p>
+            <div class="w-full grid lg:grid-cols-5 grid-cols-3 place-items-center gap-2 lg:px-20 lg:mt-20 px-5 mt-10">
+                <img class='w-4/5 h-auto' src="./icons/mozan-name.svg" alt="Mozan">
+                <img class='w-3/5 h-auto' src="./icons/bikon-name.svg" alt="Bikon">
+                <img class='w-3/5 h-auto' src="./icons/wabox-name.svg" alt="Wabox">
+                <img class='w-3/5 mt-2 lg:mt-0 h-auto' src="./icons/coxen-name.svg" alt="Coxen">
+                <img class='w-3/5 mt-2 lg:mt-0 h-auto' src="./icons/Aghore-name.svg" alt="Aghore">
+                <!-- <div class="flex flex-row">
+                    <i></i>
+                    <p>Mozan</p>
+                </div>
+                <div class="flex flex-row">
+                    <i></i>
+                    <p>Bikon</p>
+                </div>
+                <div class="flex flex-row">
+                    <i></i>
+                    <p>Wabox</p>
+                </div>
+                <div class="flex flex-row">
+                    <i></i>
+                    <p>Coxen</p>
+                </div>
+                <div class="flex flex-row">
+                    <i></i>
+                    <p>Aghore</p>
+                </div> -->
+            </div>
+            <div class="w-full flex lg:flex-row flex-col mt-20">
+                <div class="lg:w-2/5 w-full h-auto flex flex-col justify-center lg:pl-20 pl-5 pr-5 lg:pr-0 relative">
+                    <!-- Brand Carousel -->
+                    <div class="owl-carousel owl-theme brands-carousel w-full">
+                        <div class="item">
+                            <div class="flex flex-row justify-between mb-5">
+                                <img class='w-brand h-auto justify-self-center' src="./icons/bikon-name.svg" alt="Bikon">
+                            </div>
+                            <p class="lg:text-2xl text-xl font-semibold">Experienced agile team prepared to scale up to battle climate change</p>
+                            <button class="w-fit px-3 py-1 border-pink rounded text-pink mt-6 lg:text-base text-sm font-semibold">Web Development</button>
+                            <div class="flex flex-row justify-between items-center lg:mt-6 mt-2 lg:text-base text-sm">
+                                <button class="w-fit px-3 py-1 border-pink rounded text-pink font-semibold">Platform for Climate tech</button>
+                                <button class="w-fit px-3 py-1 text-white rounded bg-pink font-semibold">View Case</button>
+                            </div> 
+                        </div>
+                        <div class="item">
+                            <div class="flex flex-row justify-between mb-5">
+                                <img class='w-brand h-auto justify-self-center' src="./icons/bikon-name.svg" alt="Bikon">
+                            </div>
+                            <p class="lg:text-2xl text-xl font-semibold">Experienced agile team prepared to scale up to battle climate change</p>
+                            <button class="w-fit px-3 py-1 border-pink rounded text-pink mt-6 lg:text-base text-sm font-semibold">Web Development</button>
+                            <div class="flex flex-row justify-between items-center lg:mt-6 mt-2 lg:text-base text-sm">
+                                <button class="w-fit px-3 py-1 border-pink rounded text-pink font-semibold">Platform for Climate tech</button>
+                                <button class="w-fit px-3 py-1 text-white rounded bg-pink font-semibold">View Case</button>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="flex flex-row absolute brands-nav z-10">
+                        <a class="cursor-pointer mr-2 left-brand"><img class='w-4/5 h-auto' src="./icons/Left.svg" alt="Left"></a>
+                        <a class="cursor-pointer right-brand"><img class='w-4/5 h-auto' src="./icons/Right.svg" alt="Right"></a>
+                    </div>
+                </div>
+                <div class="lg:ml-10 lg:w-3/5 w-full bg-pink-light lg:rounded-l-md pl-10 py-10 mt-5 lg:mt-0">
+                    <img class="w-full h-auto" src="./images/screen.png" alt="Screen">
+                </div>
+            </div>
+        </div>
+        <!-- section 5 -->
+        <div class="w-full lg:px-10">
+            <div class='w-full lg:mt-32 mt-10 bg-gray lg:px-16 px-5 py-24 lg:rounded'>
+                <p data-aos='zoom-in' data-aos-delay='100' class="text-blue text-center lg:text-xl text-md font-semibold">Our product development stories</p>
+                <h2 data-aos='zoom-in' data-aos-delay='200' class="lg:text-5xl text-3xl text-center font-bold leading-none mt-5">What our Clients say?</h2>
+                <p data-aos='zoom-in' data-aos-delay='200' class="lg:text-2xl text-xl lg:mt-16 mt-10 font-semibold lg:px-32 px-5 text-center">"Great design doesn’t have to be complicated. It needs to reveal the true nature of a company and its value proposition. Thanks to Startup Development House we were able to 
+                    clearly articulate ours. It wasn’t a simple task, but the SDH Team made the challenge look easy!"</p>
+                <div class="w-full flex flex-row justify-between items-center mt-16">
+                    <a class="cursor-pointer customPrevBtn"><img class="w-8 h-auto" src="./icons/LeftArrow.svg" alt="Left Arrow"></a>
+                    <!-- Client Carousel -->
+                    <div class="lg:w-1/3 w-3/5 owl-carousel owl-theme client-carousel h-auto shadow-lg">
+                        <div class="item">
+                            <div class="bg-white lg:py-5 lg:px-8 py-3 px-4 rounded">
+                                <div class="flex flex-row items-center">
+                                    <div class="lg:w-1/6 w-1/3">
+                                        <img class='w-12 h-auto' src="./images/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="ml-3 flex flex-col">
+                                        <h2 class="lg:text-xl text-base font-bold">Augustus Kim</h2>
+                                        <p class="lg:text-md text-sm text-gray">Sales Manager, Slack</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="bg-white lg:py-5 lg:px-8 py-3 px-4 rounded">
+                                <div class="flex flex-row items-center">
+                                    <div class="lg:w-1/6 w-1/3">
+                                        <img class='w-12 h-auto' src="./images/avatar.png" alt="Avatar">
+                                    </div>
+                                    <div class="ml-3 flex flex-col">
+                                        <h2 class="lg:text-xl text-base font-bold">Augustus Kim</h2>
+                                        <p class="lg:text-md text-sm text-gray">Sales Manager, Slack</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="cursor-pointer customNextBtn"><img class="w-8 h-auto" src="./icons/RightArrow.svg" alt="Right Arrow"></a>
+                </div>
+            </div>
+        </div>
+        <!-- section 6 -->
+        <div class="w-full lg:px-32 px-5 lg:pt-16 pt-8">
+            <h2 data-aos='fade-right'data-aos-delay='100' class="text-center lg:text-5xl text-3xl font-bold">Find the best technology for your product</h2>
+            <p class="text-black-light lg:text-xl text-base text-center lg:px-48 px-5 mt-2 lg:mt-0">Having released over 40 products we have a set of technologies that 
+                we love to work with. <br class='hidden lg:block'>
+                Tell us about your product vision and goals and we will choose technologies that will help you achieve them.</p>
+            <div class="lg:px-40 px-5 grid lg:grid-cols-3 grid-cols-1 lg:gap-4 gap-2 lg:mt-20 mt-10">
+                <div class="bg-white flex flex-col shadow-lg px-4 pt-4 pb-8">
+                    <div class="flex flex-row pl-5 pt-5 items-center">
+                        <img class='w-10 h-auto mr-3' src="./icons/react.svg" alt="React">
+                        <p class="text-2xl font-bold">React</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-4 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Scalable, flexible and solid</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Fast site rendering</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">SEO friendly</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Powerful toolset for quick development</p>
+                    </div>
+                    <button class="px-3 py-2 rounded bg-blue text-white mt-8 font-semibold">Read More</button>
+                </div>
+                <div class="bg-white flex flex-col px-4 pt-4 pb-8">
+                    <div class="flex flex-row pl-5 pt-5 items-center">
+                        <img class='w-10 h-auto mr-3' src="./icons/angular.svg" alt="Angular">
+                        <p class="text-2xl font-bold">Angular</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-4 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Scalable, flexible and solid</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Fast site rendering</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">SEO friendly</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Powerful toolset for quick development</p>
+                    </div>
+                    <button class="px-3 py-2 rounded bg-sea text-white mt-8">Read More</button>
+                </div>
+                <div class="bg-white flex flex-col px-4 pt-4 pb-8">
+                    <div class="flex flex-row pl-5 pt-5 items-center">
+                        <img class='w-10 h-auto mr-3' src="./icons/node.svg" alt="Node">
+                        <p class="text-2xl font-bold">Node.js</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-4 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Scalable, flexible and solid</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Fast site rendering</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">SEO friendly</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Powerful toolset for quick development</p>
+                    </div>
+                    <button class="px-3 py-2 rounded bg-sea text-white mt-8">Read More</button>
+                </div>
+                <div class="bg-white flex flex-col px-4 pt-4 pb-8">
+                    <div class="flex flex-row pl-5 pt-5 items-center">
+                        <img class='w-10 h-auto mr-3' src="./icons/ror.svg" alt="Ruby">
+                        <p class="text-2xl font-bold">Ruby on Rails</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-4 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Scalable, flexible and solid</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Fast site rendering</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">SEO friendly</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Powerful toolset for quick development</p>
+                    </div>
+                    <button class="px-3 py-2 rounded bg-sea text-white mt-8">Read More</button>
+                </div>
+                <div class="bg-white flex flex-col px-4 pt-4 pb-8">
+                    <div class="flex flex-row pl-5 pt-5 items-center">
+                        <img class='w-10 h-auto mr-3' src="./icons/react.svg" alt="React">
+                        <p class="text-2xl font-bold">React Native</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-4 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Scalable, flexible and solid</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Fast site rendering</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">SEO friendly</p>
+                    </div>
+                    <div class="flex flex-row pl-5 mt-2 items-center">
+                        <img class="w-5 h-auto" src="./icons/check.svg" alt="">
+                        <p class="text-base font-semibold ml-2">Powerful toolset for quick development</p>
+                    </div>
+                    <button class="px-3 py-2 rounded bg-sea text-white mt-8">Read More</button>
+                </div>
+            </div>
+        </div>
+        <!-- section 7 -->
+        <div class="w-full lg:px-10 lg:py-12 py-6">
+            <div class='w-full lg:mt-32 mt-5 bg-blue lg:px-16 lg:py-24 px-5 py-10 lg:rounded'>
+                <p data-aos='zoom-in' data-aos-delay='100' class="text-white text-center lg:text-xl text-base">Curious whether INK Software Solutions is the right fit for your project?</p>
+                <h2 data-aos='zoom-in' data-aos-delay='200' class="text-white text-center lg:text-5xl text-2xl my-10">Schedule a free discovery session<br class='hidden lg:block'>with our team today.</h2>
+                <div class="flex justify-center">
+                    <button class="w-fit px-3 py-2 rounded bg-white text-blue font-semibold text-sm lg:text-base">Schedule a call</button>
+                </div>
+            </div>
+        </div>
+        <!-- section 8 footer -->
+        <div class="w-full bg-black text-white lg:px-20 lg:py-16 px-5 py-8">
+            <div class="w-full flex lg:flex-row flex-col">
+                <div class='lg:w-1/5 w-full flex flex-col'>
+                    <img class="w-10 h-auto lg:mb-10 mb-5" src="./icons/logo.svg" alt="Logo">
+                    <p class="text-sm">INK Software Solutions is a software company who are passionate about storytelling, visual design, and technology. We collaborate with companies small to large around the world to
+                         help them engage their audiences and build brand awareness.</p>
+                    <p class="text-base text-blue mt-2">+48 798 874 852</p>
+                    <p class="text-base text-blue mt-2">hello@inksoftwaresolutions.com</p>
+                </div>
+                <div class="lg:w-4/5 w-full lg:pl-32 grid lg:grid-cols-4 grid-cols-1 gap-4 mt-5 lg:mt-0">
+                     <div class="flex flex-col">
+                         <p class="text-base text-blue mb-2">Company</p>
+                         <a class="text-xs mt-1" href=""><p>Projects</p></a>
+                         <a class="text-xs mt-1" href=""><p>Careers</p></a>
+                         <a class="text-xs mt-1" href=""><p>Price Estimate</p></a>
+                         <a class="text-xs mt-1" href=""><p>About Us</p></a>
+                     </div>
+                     <div class="flex flex-col">
+                        <p class="text-base text-blue mb-2">Services</p>
+                        <a class="text-xs mt-1" href=""><p>Product Discovery Process</p></a>
+                        <a class="text-xs mt-1" href=""><p>Product Design</p></a>
+                        <a class="text-xs mt-1" href=""><p>Web Development</p></a>
+                        <a class="text-xs mt-1" href=""><p>Mobile Development</p></a>
+                        <a class="text-xs mt-1" href=""><p>User Testing</p></a>
+                        <a class="text-xs mt-1" href=""><p>Quality Assurance</p></a>
+                        <a class="text-xs mt-1" href=""><p>Cloud Application</p></a>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-base text-blue mb-2">Workflow</p>
+                        <a class="text-xs mt-1" href=""><p>Startup MVP</p></a>
+                        <a class="text-xs mt-1" href=""><p>Agile Product Scaling</p></a>
+                        <a class="text-xs mt-1" href=""><p>Corporate Digital Transformation</p></a>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-base text-blue mb-2">Technology</p>
+                        <a class="text-xs mt-1" href=""><p>Ruby on Rails</p></a>
+                        <a class="text-xs mt-1" href=""><p>React</p></a>
+                        <a class="text-xs mt-1" href=""><p>React Native</p></a>
+                        <a class="text-xs mt-1" href=""><p>Node.js</p></a>
+                        <a class="text-xs mt-1" href=""><p>Angular</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center mt-10">
+                <div class="lg:w-1/5 w-1/2 flex flex-row items-center justify-between">
+                    <a href=""><img class="w-5 h-auto" src="./icons/Facebook.svg" alt=""></a>  
+                    <a href=""><img class="w-5 h-auto" src="./icons/Instagram.svg" alt=""></a>  
+                    <a href=""><img class="w-5 h-auto" src="./icons/LinkedIn.svg" alt=""></a>   
+                    <a href=""><img class="w-5 h-auto" src="./icons/Youtube.svg" alt=""></a>  
+                    <a href=""><img class="w-5 h-auto" src="./icons/Twitter.svg" alt=""></a> 
+                </div>
+            </div>
+            
+
+        </div>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(function() {AOS.init();});
+    </script>
+</body>
+
+</html>
