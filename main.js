@@ -202,7 +202,17 @@ $(document).ready(function () {
       $('.project').removeClass("border-b-blue");
       $('.project').removeClass("border-b-mate");
       $('.project').addClass("border-b-mate");
+      $('.project-text').hide();
       $(this).addClass('border-b-blue');
+      if ($('.startup').hasClass("border-b-blue")){
+        $("#startup").fadeIn();
+      }
+      if ($('.Agile').hasClass("border-b-blue")){
+        $("#agile").fadeIn();
+      }
+      if ($('.Corporate').hasClass("border-b-blue")){
+        $("#corporate").fadeIn();
+      }
     });
     // ...
 
