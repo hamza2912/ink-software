@@ -194,3 +194,30 @@ body{
 @-moz-keyframes spin { 50% { -moz-transform: rotate(3deg); } 100% {-moz-transform: rotate(0deg);} }
 @-webkit-keyframes spin { 50% { -webkit-transform: rotate(3deg); } 100% {-webkit-transform: rotate(0deg);} }
 @keyframes spin { 50% { transform:rotate(3deg); } 100% { transform:rotate(0deg); } }
+
+
+/* css for brand page */
+
+.text-gray-logo{
+  color: #CDCDCD;
+}
+
+.text-vaultra{
+  color: #00ACEB;
+}
+
+.text-ils{
+  color: #0007BF;
+}
+
+.text-avito{
+  color: black !important;
+}
+
+.text-luxoft{
+  color: white !important;
+}
+
+.text-pentaho{
+  color: #49535c;
+}

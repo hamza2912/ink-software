@@ -216,4 +216,72 @@ $(document).ready(function () {
     });
     // ...
 
+
+    // Code for brand page fucntionality
+
+    $('.brands-carousel').on('changed.owl.carousel', function(event) {
+
+      setTimeout(function(){
+      
+      var activebrand = $('.owl-item.active > div > div > p').text();
+      console.log(activebrand);
+
+      $("#vaultra > img").attr("src","./logos/vaultra-gray.png");
+      $("#ils > img").attr("src","./logos/ILS-gray.png");
+      $("#avito > img").attr("src","./logos/avito-gray.png");
+      $("#luxoft > img").attr("src","./logos/luxoft-gray.png");
+      $("#pentaho > img").attr("src","./logos/pentaho-gray.png");
+      // $(".brand-image").removeClass("bg-pink-light");
+      $(".brand-names").removeClass("text-vaultra");
+      $(".brand-names").css( "color", "#CDCDCD" );
+
+      if (activebrand === "Schools"){
+        $("#ils > img").attr("src","./logos/ILS.png");
+        $("#ils > p").css( "color", "#0007BF" );
+        // $(".brand-image").css( "background-color", "#eef0f8" );
+        $(".brand-image > img").attr("src","./brands_images/bg_ils.jpg");
+      } else if (activebrand === "Avito"){
+        $("#avito > img").attr("src","./logos/avito.png");
+        $("#avito > p").css( "color", "#000000" );
+        // $(".brand-image").css( "background-color", "#d9f999" );
+        $(".brand-image > img").attr("src","./brands_images/screen.png");
+      } else if (activebrand === "Luxoft"){
+        $("#luxoft > img").attr("src","./logos/luxoft.png");
+        $("#luxoft > p").css( "color", "#0007BF" );
+        // $(".brand-image").css( "background-color", "#ededed" );
+        $(".brand-image > img").attr("src","./brands_images/bg_luxoft.jpg");
+      } else if (activebrand === "Pentaho"){
+        $("#pentaho > img").attr("src","./logos/pentaho.png");
+        $("#pentaho > p").css( "color", "#49535C" );
+        // $(".brand-image").css( "background-color", "#e8eef2" );
+        $(".brand-image > img").attr("src","./brands_images/bg_pentaho.jpg");
+      } else{
+        $("#vaultra > img").attr("src","./logos/vaultra.png");
+        $("#vaultra > p").css( "color", "#00ACEB" );
+        // $(".brand-image").css( "background-color", "#ebf8fd" );
+        $(".brand-image > img").attr("src","./brands_images/bg_vaultra.jpg");
+      }
+
+      },1);
+
+    })
+
+    $('#ils').click(function() {
+      $('.brands-carousel').trigger('to.owl.carousel',1);
+    })
+    $('#avito').click(function() {
+      $('.brands-carousel').trigger('to.owl.carousel',2);
+    })
+    $('#luxoft').click(function() {
+      $('.brands-carousel').trigger('to.owl.carousel',3);
+    })
+    $('#pentaho').click(function() {
+      $('.brands-carousel').trigger('to.owl.carousel',4);
+    })
+    $('#vaultra').click(function() {
+      $('.brands-carousel').trigger('to.owl.carousel',0);
+    })
+
+    // ...
+
   });
